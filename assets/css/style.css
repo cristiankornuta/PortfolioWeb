@@ -93,7 +93,6 @@ nav .nav-link.active {
 }
 
 
-
 /* =========================================================
    CONTENEDOR GENERAL
    ========================================================= */
@@ -142,7 +141,7 @@ nav .nav-link.active {
 
 .social-links a {
   color: var(--color-muted);
-  font-size: 2.0rem;
+  font-size: 1.9rem;
   margin: 0 10px;
   transition: 0.2s;
 }
@@ -372,3 +371,4 @@ footer {
   border-top: 1px solid var(--color-border);
   font-size: 0.85rem;
 }
+
