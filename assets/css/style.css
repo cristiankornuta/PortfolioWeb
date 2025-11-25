@@ -12,7 +12,6 @@
   --font-heading: 'Playfair Display', serif;
 }
 
-
 /* =========================================================
    BASE
    ========================================================= */
@@ -40,11 +39,23 @@ canvas {
 /* =========================================================
    NAVBAR
    ========================================================= */
+
 nav {
   background: #1e1f20ee;
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border); /* Borde por defecto */
   padding: 12px 20px;
+}
+
+/* Estilo para la barra de navegación en modo móvil */
+@media (max-width: 991px) {
+  .navbar {
+    border-bottom: 1px solid #2a2b2d !important; /* Borde claro para pantallas pequeñas */
+  }
+  /* Cambiar color del icono del menú hamburguesa */
+  .navbar-toggler-icon {
+    background-color: #767677; /* Cambiar color del icono en móvil */
+  }
 }
 
 .navbar-brand {
@@ -66,6 +77,21 @@ nav .nav-link.active {
   color: var(--color-primary) !important;
   font-weight: 600;
 }
+
+
+/* =========================================================
+   AJUSTA LOS BOTOENES DE LOS FILTROS A LA PANTALLA
+   ========================================================= */
+
+/* Ajustar el tamaño de los botones en dispositivos pequeños */
+@media (max-width: 768px) {
+  .filter-btn {
+    font-size: 0.85rem; /* Reducir tamaño de texto en botones */
+    padding: 6px 12px;  /* Ajustar el relleno para hacer los botones más compactos */
+    margin: 5px;        /* Añadir un pequeño margen entre botones */
+  }
+}
+
 
 
 /* =========================================================
